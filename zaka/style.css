@@ -1,0 +1,38 @@
+body{
+    background-image: url("img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    background-position: center;
+    
+}
+
+main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5) url(img/img1.jpg));
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+   
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    border: 1px solid;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 8%;
+    padding: 12px 45px;
+    
+}
+

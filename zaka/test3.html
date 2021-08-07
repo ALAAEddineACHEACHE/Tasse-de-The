@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+               //Tableaux
+//un tab est une structure de donnée qui nous permet de stocker des infos du même type ou pas
+//jste en js 
+//Methodes:pop(),push(),slice(),unshift(),shift(),splice(),indexOf()
+//Ex1
+const semaines=["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
+console.log(semaines);
+//Ex2
+const condiments=["Tomate","Oignon","Persil","Carotte","Choux","Poivron"];
+console.log(condiments)
+console.log(condiments.pop());
+console.log(condiments.push("betterave"));
+console.log(condiments)
+condiments.shift();
+console.log(condiments.unshift("pomme de terre"));
+console.log(condiments);
+//Ex3
+const recettes = ['pizza', 'pates', 'poulet', 'salade', 'tajine','soupe', 'haricot'];
+//console.log(recettes.splice(3,4));
+//console.log(recettes.splice(0,4))
+console.log(recettes.indexOf("salade"));
+console.log(recettes.splice(2,1,"Olive"));
+console.log(recettes);
+//Ex4
+const nombres = [4,7,6,2,6,5,9,10,12,16,18];
+let sum=0;
+for(i=0;i<nombres.length;i++){
+    sum = sum + nombres[i];
+}
+console.log(sum);
+//EX5
+const a = [
+[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]
+];
+console.log(a);
+let somme=0;
+
+for(let i=0;i<a.length;i++){
+    somme+=a[i][0];
+}
+console.log(somme);
+/* Méthode Prof question de somme de tous les nombres 
+let sommetotale=0;
+for(let i=0;i<a.length;i++){
+    let somme=0;
+    for(let j=0;j<a[i].length;j++){
+        somme=somme+a[i][j];
+        }
+        console.log(somme);
+        sommetotal+=somme;   
+    }
+    console.log(sommetotal);
+    
+}*/
+//Ques 4
+let sommetotale=0;
+for(let i=0;i<a.length;i++){
+    let somme=0;
+    for(let j=0;j<a[i].length;j++){
+        if(j==0){
+            console.log(a[i][j]);
+        }
+        somme=somme+a[i][j];
+        }
+        console.log(somme);
+        sommetotal+=somme;   
+    }
+    console.log(sommetotal);
+//Ex6
+const arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+console.log(arr1);
+let resultat;
+let max ; 
+let  cpt=0;
+// for(let i=0;i<arr1.length;i++){
+//    for(let j=0;j<arr1.length;j++){
+//        if(arr1[i]==arr1[j]){
+//            cpt++;
+//        }
+//        resultat=resultat+cpt;
+//    }   
+// }
+
+
+let max=arr1[0] ; 
+let occurence ; 
+let repetition=0;
+for(let i=0;i<arr1.length;i++){
+
+    for(let j=i;j<arr1.length;j++){
+         if(arr1[i] == arr1[j])
+         {
+             occurence++; 
+         }
+         if(occurence>repetition){
+             repetition=occurence;
+             nombre=max;
+         }
+    }  
+    
+}
+    </script>
+    
+</body>
+</html>
